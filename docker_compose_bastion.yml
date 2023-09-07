@@ -1,5 +1,7 @@
 version: '3.8'
 services:
   ssh:
-    image: ubuntu:latest
-    env: 
+    build: ./ssh/ssh
+    ports:
+      - 8327:22
+
